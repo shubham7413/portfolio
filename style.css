@@ -8,6 +8,8 @@ body {
 }
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 /* nav secition */
 nav {
@@ -224,9 +226,10 @@ input[type="submit"]:hover {
 .card-container {
   width: 90%;
   margin: 0 auto;
+  /* margin-top: 50px; */
 }
 .card {
-  width: 25%;
+  width: 20%;
   position: relative;
   padding: 30px;
   border-radius: 8px;
@@ -284,4 +287,87 @@ i.flaticon-console,i.flaticon-web-programming {
 
 .margin-right {
   margin: 0 40px 0 0;
+}
+@media only screen and (max-width:992px){
+  div.container-image figure img {
+    width: 400px;
+    height: 400px;
+  }
+  div.h1-container h1 {
+    width: 55%;
+    color: white;
+  }
+  div.container div.p-container p {
+    width: 55%;
+    color: rgb(177, 177, 177);
+  }
+  /* about me */
+  div.card {
+    width: 40%;
+    margin-top: 40px;
+  }
+  div.card-container:last-child {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width:768px){
+  div.container-image figure img {
+    width: 310px;
+    height: 310px;
+  }
+  div.h1-container h1 {
+    width: 55%;
+    color: white;
+    margin-top: 0;
+  }
+  div.container div.p-container p {
+    width: 55%;
+    color: rgb(177, 177, 177);
+  }
+  /* about me */
+  div.card {
+    width: 100%;
+    margin-top: 40px;
+  }
+  div.card-container:last-child {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width:576px){
+  div.intro-section {
+    height: 100vh;
+}
+  div.container-image figure img {
+    /* width: 200px;
+    height: 200px;
+    top: 40%;
+    right: 5%; */
+    display: none;
+  }
+  div.container div.h1-container{
+    width: 100%;
+  }
+  div.h1-container h1 {
+    width: 100%;
+    color: white;
+    margin-top: 0;
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+  div.container div.p-container p {
+    width: 90%;
+    color: rgb(177, 177, 177);
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+  div.container div.button-container {
+    margin: 0 auto;
+    
+    margin-left: 30px;
+    padding-left: 15px;
+    width: 100%;
+}
+div.card {
+  margin-right: 0;
+}
 }
